@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobertura | Transportes AngelAlberto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cobertura.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="hamburguer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="img/logo.png" alt="logo-empresa"></div>
+            
+            <!-- Botón del menú hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Menú de navegación -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="sobrenosotros.html">Sobre Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="cobertura.html">Cobertura</a>
+                <a href="#footer-container">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="coverage-hero">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="img/Video-cobertura.mp4" type="video/mp4">
+                <!-- Opcional: agregar fuentes alternativas para compatibilidad -->
+                <source src="video/ruta-peru.webm" type="video/webm">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Nuestra Cobertura</h1>
+                <p class="hero-subtitle">Llegamos a todo el Perú </p>
+                <div class="hero-scroll">
+                    <span>Explora nuestras rutas</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="section-header">
+                <h2 class="section-title">Áreas de Cobertura</h2>
+                <p class="section-subtitle">Selecciona una región para ver detalles</p>
+            </div>
+            
+            <div class="map-container">
+                <div id="coverage-map"></div>
+                <div class="map-sidebar">
+                    <div class="region-info">
+                        <h3 id="region-name">Selecciona una región</h3>
+                        <div class="info-content" id="region-info">
+                            <p>Haz clic en el mapa o selecciona una ubicación de la lista para ver detalles de cobertura.</p>
+                        </div>
+                    </div>
+                    <div class="region-list">
+                        <h4>Ubicaciones disponibles</h4>
+                        <ul id="location-list">
+                            <li data-region="lima">Lima y Callao</li>
+                            <li data-region="norte">Región Norte</li>
+                            <li data-region="sur">Región Sur</li>
+                            <li data-region="centro">Región Centro</li>
+                            <li data-region="oriente">Región Oriente</li> 
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coverage Details -->
+        <section class="coverage-details">
+            <div class="section-header">
+                <h2 class="section-title">Detalles de Cobertura</h2>
+                <p class="section-subtitle">Nuestra red logística en números</p>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="25">2</div>
+                        <h3>Regiones cubiertas</h3>
+                        <p>En todo el territorio peruano</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="120">9</div>
+                        <h3>Vehículos</h3>
+                        <p>En operación constante</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="18">0</div>
+                        <h3>Centros logísticos</h3>
+                        <p>Estratégicamente ubicados</p>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="4">0</div>
+                        <h3>Países</h3>
+                        <p>Cobertura internacional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Routes Section -->
+        <section class="routes-section">
+            <div class="section-header">
+                <h2 class="section-title">Principales Rutas</h2>
+                <p class="section-subtitle">Conectamos las principales ciudades del Perú</p>
+            </div>
+            
+            <div class="routes-timeline">
+                <div class="route-item">
+                    <div class="route-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <div class="route-content">
+                        <h3>Ruta Panamericana Norte</h3>
+                        <p>Lima - Trujillo - Chiclayo - Piura - Tumbes</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> Tiempo promedio: 18-24 hrs</span>
+                            <span><i class="fas fa-calendar-alt"></i> Frecuencia: Diaria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="route-item">
+                    <div class="route-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="route-content">
+                        <h3>Ruta Central</h3>
+                        <p>Lima - Huancayo - Huánuco - Cerro de Pasco</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> Tiempo promedio: 12-15 hrs</span>
+                            <span><i class="fas fa-calendar-alt"></i> Frecuencia: 5 veces/semana</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="route-item">
+                    <div class="route-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="route-content">
+                        <h3>Ruta Panamericana Sur</h3>
+                        <p>Lima - Ica - Arequipa - Tacna</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> Tiempo promedio: 20-26 hrs</span>
+                            <span><i class="fas fa-calendar-alt"></i> Frecuencia: Diaria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="route-item">
+                    <div class="route-icon">
+                        <i class="fas fa-water"></i> <!-- Nuevo ícono para ruta fluvial -->
+                    </div>
+                    <div class="route-content">
+                        <h3>Ruta Oriente</h3>
+                        <p>Lima - Pucallpa - Iquitos - Puerto Maldonado</p>
+                        <div class="route-details">
+                            <span><i class="fas fa-clock"></i> Tiempo promedio: 3-5 días</span>
+                            <span><i class="fas fa-calendar-alt"></i> Frecuencia: 3 veces/semana</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <br>
+
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section class="coverage-cta">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <h2>¿Necesitas cobertura en otra ubicación?</h2>
+                <p>Contáctanos para consultar sobre rutas especiales o cobertura personalizada</p>
+                <div class="cta-buttons">
+                    <a href="" class="cta-btn primary"><i class="fas fa-phone-alt"></i> Consultar ahora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="corporate-footer" id="footer-container">
+        <div class="footer-container">
+            <!-- Sección Contacto -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Contacto
+                    <span class="orange-line"></span>
+                </h4>
+                <br>
+                <div class="contact-info">
+                    <p class="footer-text"> 📧 operacionesmaa@gmail.com</p>
+                    <p class="footer-text"> 📞 +51 986367170</p>
+                    <p class="footer-text"> 📍 Lima, Peru</p>
+                </div>
+            </div>
+
+            <!-- Sección Navegación -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Navegación
+                    <span class="orange-line"></span>
+                </h4>
+                <nav class="footer-nav">
+                    <br>
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Sobre Nosotros</a>
+                    <a href="#" class="nav-link">Servicios</a>
+                    <a href="#" class="nav-link">Cobertura</a>
+                </nav>
+            </div>
+
+            <!-- Sección Suscripción -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Suscríbete
+                    <span class="orange-line"></span>
+                </h4>
+                <form class="subscribe-form">
+                    <br>
+                    <input type="email" class="email-input" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p class="copyright-text">© 2025 Multiservicios AngelAlberto. Todos los derechos reservados</p>
+        </div>
+    
+
+
+
+    <!-- Chatbot integrado -->
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <div class="chatbot-container hidden" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <i class="fas fa-times" id="chatbot-close"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="bot.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="cobertura.js"></script>
+    <script src="hamburguer.js"></script>
+</body>
+
+</html>

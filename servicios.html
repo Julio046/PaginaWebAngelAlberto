@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Transportes AngelAlberto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="hamburguer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="img/logo.png" alt="logo-empresa"></div>
+            
+            <!-- Botón del menú hamburguesa -->
+            <button class="hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Menú de navegación -->
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="sobrenosotros.html">Sobre Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="cobertura.html">Cobertura</a>
+                <a href="#footer-container">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="services-hero">
+            <img src="img/servicios.png" alt="Servicios logísticos" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Nuestros Servicios</h1>
+                <p class="hero-subtitle">Soluciones logísticas completas para todo tipo de carga</p>
+                <div class="hero-scroll">
+                    <span>Explora nuestros servicios</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="services-grid-section">
+            <div class="section-header">
+                <h2 class="section-title">Servicios Especializados</h2>
+                <p class="section-subtitle">Soluciones adaptadas a tus necesidades logísticas</p>
+            </div>
+
+            <div class="services-tabs">
+                <button class="tab-btn active" data-category="all">Todos</button>
+                <button class="tab-btn" data-category="nacional">Transporte Nacional</button>
+                
+                <button class="tab-btn" data-category="especializado">Servicios Especializados</button>
+            </div>
+
+            <div class="services-grid-container">
+                <!-- Servicio 1 -->
+                <div class="service-card" data-category="nacional">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>Transporte Nacional</h3>
+                            <p>Distribución en todo el Perú con seguimiento GPS</p>
+                            <div class="service-badge">Desde $</div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Transporte Nacional</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Cobertura en todo el territorio peruano</li>
+                                <li><i class="fas fa-check"></i> Monitoreo satelital 24/7</li>
+                                <li><i class="fas fa-check"></i> Flota moderna y equipada</li>
+                                <li><i class="fas fa-check"></i> Seguro de carga incluido</li>
+                            </ul>
+                            <button class="service-cta">Cotizar ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+             
+
+ 
+             
+
+                <!-- Servicio 5 -->
+                <div class="service-card" data-category="especializado">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3>Transporte Sobredimensionado</h3>
+                            <p>Maquinaria pesada y cargas especiales</p>
+                            <div class="service-badge">Desde $</div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Transporte Sobredimensionado</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Permisos especiales</li>
+                                
+                                <li><i class="fas fa-check"></i> Ruta planificada</li>
+                                
+                            </ul>
+                            <button class="service-cta">Cotizar ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 6 -->
+                <div class="service-card" data-category="nacional">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3>Almacenamiento</h3>
+                            <p>Bodegas seguras en ubicaciones estratégicas</p>
+                            <div class="service-badge">Desde $/mes</div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Almacenamiento</h3>
+                            <ul>
+                                <li><i class="fas fa-check"></i> 24/7 vigilancia</li>
+                                <li><i class="fas fa-check"></i> Control de inventario</li>
+                                <li><i class="fas fa-check"></i> Seguro incluido</li>
+                                <li><i class="fas fa-check"></i> Cross-docking</li>
+                            </ul>
+                            <button class="service-cta">Cotizar ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestras Ventajas</h2>
+                <p class="section-subtitle">Por qué elegir Transportes AngelAlberto</p>
+            </div>
+
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad Garantizada</h3>
+                    <p>Protocolos estrictos y tecnología de punta para proteger tu carga en todo momento.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Cobertura Nacional</h3>
+                    <p>Llegamos a todas las regiones del Perú con nuestra flota propia y aliados estratégicos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Asesoramiento personalizado y seguimiento constante durante todo el transporte.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Tecnología Avanzada</h3>
+                    <p>Sistemas de rastreo GPS en tiempo real y plataforma digital para gestionar tus envíos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Proceso</h2>
+                <p class="section-subtitle">Cómo trabajamos para garantizar tu satisfacción</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Cotización</h3>
+                        <p>Recibimos tus requerimientos y te enviamos una propuesta personalizada en menos de 24 horas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Recolección</h3>
+                        <p>Recogemos tu carga en el lugar y hora acordados, con el equipo adecuado para su manipulación.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Transporte</h3>
+                        <p>Movemos tu carga con los más altos estándares de seguridad y seguimiento constante.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Entrega</h3>
+                        <p>Llegamos a destino en el tiempo pactado y te enviamos evidencia de la entrega.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonios-container">
+            <div class="section-header">
+                <h2 class="section-title">Clientes Satisfechos</h2>
+                <p class="section-subtitle">Lo que dicen quienes confían en nosotros</p>
+            </div>
+        
+            <div class="testimonios-slider">
+                <!-- Flechas de navegación -->
+                <button class="slider-nav slider-prev" aria-label="Testimonio anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-nav slider-next" aria-label="Testimonio siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+        
+                <div class="testimonios-track">
+                    <!-- Testimonio 1 -->
+                    <div class="testimonio">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">Llevamos 5 años trabajando con Transportes AngelAlberto y nunca
+                                nos han fallado. Su puntualidad y cuidado con nuestra carga refrigerada es excepcional.
+                            </p>
+                            <div class="testimonio-author">
+                                <img src="img/cliente.png" alt="Ricardo Gómez" class="author-image" loading="lazy">
+                                <div class="author-info">
+                                    <h4>Ricardo Gómez</h4>
+                                    <p>Gerente de Logística, Colchones Paraíso</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonio 2 -->
+                    <div class="testimonio">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">Necesitábamos transportar maquinaria pesada a Arequipa y su
+                                equipo nos brindó una solución integral con todos los permisos y seguridad necesaria.
+                            </p>
+                            <div class="testimonio-author">
+                                <img src="img/cliente.png" alt="María Fernández" class="author-image" loading="lazy">
+                                <div class="author-info">
+                                    <h4>María Fernández</h4>
+                                    <p>Directora de Operaciones, Construcciones Andinas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Testimonio 3 -->
+                    <div class="testimonio">
+                        <div class="testimonio-content">
+                            <p class="testimonio-text">Su servicio internacional a Chile ha sido clave para nuestra
+                                expansión. Manejan toda la documentación aduanera y nos mantienen informados en cada
+                                paso.</p>
+                            <div class="testimonio-author">
+                                <img src="img/cliente.png" alt="Carlos Villanueva" class="author-image" loading="lazy">
+                                <div class="author-info">
+                                    <h4>Carlos Villanueva</h4>
+                                    <p>Gerente General, Textiles Peruanos S.A.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Indicadores -->
+                <div class="slider-controls">
+                    <button class="slider-dot active" aria-label="Ir al testimonio 1"></button>
+                    <button class="slider-dot" aria-label="Ir al testimonio 2"></button>
+                    <button class="slider-dot" aria-label="Ir al testimonio 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="services-cta">
+            <div class="cta-overlay"></div>
+            <div class="cta-content">
+                <h2>¿Listo para transportar con los expertos?</h2>
+                <p>Contáctanos hoy mismo y recibe una cotización personalizada</p>
+                <div class="cta-buttons">
+                    <a href="#footer-content" class="cta-btn primary"><i class="fas fa-phone-alt"></i> Llamar ahora</a>
+                    <a href="#footer-content" class="cta-btn secondary"><i class="fas fa-envelope"></i> Enviar
+                        mensaje</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer class="corporate-footer" id="footer-container">
+        <div class="footer-container">
+            <!-- Sección Contacto -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Contacto
+                    <span class="orange-line"></span>
+                </h4>
+                <br>
+                <div class="contact-info">
+                    <p class="footer-text"> 📧 operacionesmaa@gmail.com</p>
+                    <p class="footer-text"> 📞 +51 986367170</p>
+                    <p class="footer-text"> 📍 Lima, Peru</p>
+                </div>
+            </div>
+
+            <!-- Sección Navegación -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Navegación
+                    <span class="orange-line"></span>
+                </h4>
+                <nav class="footer-nav">
+                    <br>
+                    <a href="#" class="nav-link">Inicio</a>
+                    <a href="#" class="nav-link">Sobre Nosotros</a>
+                    <a href="#" class="nav-link">Servicios</a>
+                    <a href="#" class="nav-link">Cobertura</a>
+                </nav>
+            </div>
+
+            <!-- Sección Suscripción -->
+            <div class="footer-section">
+                <h4 class="footer-heading">Suscríbete
+                    <span class="orange-line"></span>
+                </h4>
+                <form class="subscribe-form">
+                    <br>
+                    <input type="email" class="email-input" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p class="copyright-text">© 2024 Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Chatbot integrado -->
+    <div class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <div class="chatbot-container hidden" id="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Asistente Virtual</h3>
+            <i class="fas fa-times" id="chatbot-close"></i>
+        </div>
+        <div class="chatbot-body">
+            <div class="chatbot-messages" id="chatbot-messages">
+                <!-- Mensajes aparecerán aquí -->
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="bot.js"></script>
+    <script src="script.js"></script>
+    <script src="servicios.js"></script>
+    <script src="hamburguer.js"></script>
+</body>
+
+</html>
